@@ -3,7 +3,8 @@ var
   express = require('express'),
   app = express(),
   port = process.env.PORT || 3000,
-  parser = require('body-parser');
+  parser = require('body-parser'),
+  spec = require('api-first-spec');
 
 app.use(parser.json());
 app.use(express.static(__dirname + '/public'))
